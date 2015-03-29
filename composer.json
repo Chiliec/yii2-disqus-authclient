@@ -1,0 +1,23 @@
+{
+  "name": "chiliec/yii2-disqus-authclient",
+  "description": "Disqus extension for using via yii2-authclient",
+  "keywords": ["yii2", "authclient", "oauth2", "disqus"],
+  "homepage": "https://github.com/Chiliec/yii2-disqus-authclient",
+  "require": {
+    "yiisoft/yii2-authclient": "~2.0@dev"
+  },
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Vladimir Babin",
+      "email": "vovababin@gmail.com",
+      "homepage": "http://chiliec.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "chiliec\\authclient\\": ""
+    }
+  },
+  "minimum-stability": "dev"
+}
