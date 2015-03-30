@@ -26,7 +26,15 @@ class Disqus extends OAuth2
     /**
      * @inheritdoc
      */
-    public $scope = 'read,write,email';
+    public $scope = 'read,email';
+
+    /**
+     * @inheritdoc
+     */
+    protected function initUserAttributes()
+    {
+        return $this->api('users/details.json', 'GET');
+    }
 
     /**
      * @inheritdoc
@@ -50,7 +58,7 @@ class Disqus extends OAuth2
     protected function defaultViewOptions()
     {
         return [
-            'popupWidth' => 800,
+            'popupWidth' => 700,
             'popupHeight' => 500,
         ];
     }
